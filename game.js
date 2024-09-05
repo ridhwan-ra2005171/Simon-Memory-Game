@@ -64,7 +64,18 @@ function animatePress(currentColor){
 
 }
 
+//to start on web
 $(document).keypress(function() {
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+  });
+
+//to start on mobile/ipad
+//to start game on mobile
+$(document).on("touchstart", function() {
     if (!started) {
       $("#level-title").text("Level " + level);
       nextSequence();
