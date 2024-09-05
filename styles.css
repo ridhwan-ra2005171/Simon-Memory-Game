@@ -51,3 +51,14 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+#start {
+  background-color: #4CAF50; /* green background color */
+  color: #fff; /* white text color */
+  border: none; /* remove default border */
+  padding: 10px 20px; /* add some padding */
+  font-size: 2rem; /* set font size */
+  cursor: pointer; /* change cursor to pointer on hover */
+  border-radius: 5px; /* add rounded corners */
+  margin-top: 2rem;
+}

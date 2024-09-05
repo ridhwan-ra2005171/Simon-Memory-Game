@@ -75,11 +75,13 @@ $(document).keypress(function() {
 
 //to start on mobile/ipad
 //to start game on mobile
-$("body").click(function() {
+$("#start").click(function() {
     if (!started) {
         $("#level-title").text("Level " + level);
+        $("#start").hide();
         nextSequence();
         started = true;
+        
       }
   });
 
@@ -105,6 +107,7 @@ function checkAnswer(currentLevel){
 
 
         $("#level-title").text("Game Over, Press Any Key to Restart");
+        $("#start").show().text("Restart");
         startOver();
     }
 
