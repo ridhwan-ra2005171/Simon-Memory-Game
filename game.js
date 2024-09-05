@@ -75,12 +75,12 @@ $(document).keypress(function() {
 
 //to start on mobile/ipad
 //to start game on mobile
-$("body").click(function() {
+$(document).click(function() {
     if (!started) {
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
-    }
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+      }
   });
 
 function checkAnswer(currentLevel){
