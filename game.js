@@ -75,7 +75,7 @@ $(document).keypress(function() {
 
 //to start on mobile/ipad
 //to start game on mobile
-$(document).on("touchstart", function() {
+$(document).onClick(function() {
     if (!started) {
       $("#level-title").text("Level " + level);
       nextSequence();
